@@ -62,7 +62,7 @@ def all_supplies_in_holidays(holiday_hash)
       strSupplies = ""
       supplies.each do |supply|
         if supply != supplies.last
-          strSupplies += (supply + ", ")
+          strSupplies += supply + ", "
         else
           strSupplies += supply
       end
