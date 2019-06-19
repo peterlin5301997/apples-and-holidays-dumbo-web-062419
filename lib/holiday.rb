@@ -86,7 +86,9 @@ def all_holidays_with_bbq(holiday_hash)
       supplies.each do |supply|
         if supply == "BBQ"
           array.push(holiday)
+        end
       end
     end
   end
+  return array
 end
