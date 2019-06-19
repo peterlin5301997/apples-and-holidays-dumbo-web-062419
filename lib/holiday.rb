@@ -63,7 +63,9 @@ def all_supplies_in_holidays(holiday_hash)
       if holiday.include("_")
         arHoliday = holiday.split("_")
       end
-      holiday = arHoliday.join(" ")
+      arHoliday.each do |element|
+        strHoliday = element.capitalize
+      end
       strSupplies = ""
       supplies.each do |supply|
         if supply != supplies.last
@@ -72,7 +74,7 @@ def all_supplies_in_holidays(holiday_hash)
           strSupplies += supply
         end
       end
-      puts "  #{holiday.capitalize}: #{strSupplies}"
+      puts "  #{holiday}: #{strSupplies}"
     end
   end
 end
