@@ -68,7 +68,7 @@ def all_supplies_in_holidays(holiday_hash)
           strSupplies += supply
         end
       end
-      puts "  #{strHoliday}: #{strSupplies}"
+      puts "  #{holiday}: #{strSupplies}"
     end
   end
 end
