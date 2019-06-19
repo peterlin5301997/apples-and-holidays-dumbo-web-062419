@@ -65,6 +65,7 @@ def all_supplies_in_holidays(holiday_hash)
           strSupplies += supply + ", "
         else
           strSupplies += supply
+        end
       end
       puts "  #{holiday.capitalize}: " + supplies
     end
