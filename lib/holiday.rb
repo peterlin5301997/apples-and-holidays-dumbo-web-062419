@@ -63,7 +63,7 @@ def all_supplies_in_holidays(holiday_hash)
       supplies.each do |supply|
         strSupplies += supply
       end
-      puts "  #{holiday.capitalize}: "
+      puts "  #{holiday.capitalize}: #{supply}"
     end
   end
 end
