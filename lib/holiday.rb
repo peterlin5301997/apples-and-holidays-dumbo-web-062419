@@ -62,8 +62,8 @@ def all_supplies_in_holidays(holiday_hash)
       arrHoliday = holiday.to_s.split("_")
       arrHoliday.each do |holiday_name|
         holiday_name.capitalize!
+        strHoliday.join(" ")
       end
-      arrHoliday.join(" ")
       strSupplies = ""
       supplies.each do |supply|
         if supply != supplies.last
