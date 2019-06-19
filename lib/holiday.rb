@@ -60,7 +60,7 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{season.capitalize}:"
     holidays.each do |holiday, supplies|
       arHoliday = []
-      if holiday.include?("_")
+      if holiday.include("_")
         arHoliday = holiday.split("_")
       end
       arHoliday.each do |element|
