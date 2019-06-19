@@ -60,7 +60,9 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{season.capitalize}:"
     holidays.each do |holiday, supplies|
       arrHoliday = holiday.to_s.split("_")
-
+      arrHoliday.each do |element|
+        element.capitalize
+      end
       strSupplies = ""
       supplies.each do |supply|
         if supply != supplies.last
