@@ -63,6 +63,7 @@ def all_supplies_in_holidays(holiday_hash)
       arrHoliday.each do |element|
         element.capitalize!
       end
+      arrHoliday.join
       strSupplies = ""
       supplies.each do |supply|
         if supply != supplies.last
